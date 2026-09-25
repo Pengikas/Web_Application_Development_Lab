@@ -1,115 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AeroPartsAI Marketplace</title>
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <header role="banner">
-        <p>AI-Enhanced B2B Aviation Engine &amp; Parts E-Commerce Marketplace</p>
-        <h1>AeroPartsAI Marketplace</h1>
-        <p>Lead Engineer, MRO Procurement</p>
+    <title>Nguyen Bao Chinh | Enterprise Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+
+        <div class="container header-content">
+
+            <div>
+                <p class="eyebrow">ENTERPRISE DEVELOPER PORTFOLIO</p>
+
+                <h1>Nguyen Bao Chinh</h1>
+
+                <p class="subtitle">
+                    Full-Stack Developer & AI Engineering Student
+                </p>
+            </div>
+
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-pressed="false"
+                aria-label="Switch to dark theme"
+            >
+                <span id="theme-icon" aria-hidden="true">☀️</span>
+                <span id="theme-text">Light mode</span>
+            </button>
+
+        </div>
+
     </header>
 
-    <nav role="navigation" aria-label="Primary">
-        <ul>
-            <li><a href="#file_search">Search Parts</a></li>
-            <li><a href="#rul-dashboard">RUL Prediction</a></li>
-            <li><a href="#recommendations">Recommendations</a></li>
-            <li><a href="#marketplace">Marketplace</a></li>
-            <li><a href="#orders">Orders</a></li>
-            <li><a href="#suppliers">Suppliers</a></li>
-        </ul>
-    </nav>
 
-    <main id="main-content" role="main">
-        <section id="file_search" aria-labelledby="search-title">
-            <h2 id="search-title">Search Parts</h2>
-            <form>
-                <label for="part-search">Search engine and aircraft parts</label>
-                <input id="part-search" type="search" name="part-search" placeholder="Enter part number or aircraft model">
-                <button type="submit">Search</button>
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="hero container" aria-labelledby="hero-title">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">HELLO, I'M CHINH</p>
+
+                <h2 id="hero-title">
+                    Building scalable web and AI solutions.
+                </h2>
+
+                <p>
+                    I develop modern web applications and machine learning
+                    systems with a focus on clean architecture,
+                    accessibility and maintainable code.
+                </p>
+
+                <a
+                    class="button"
+                    href="#projects"
+                >
+                    View my projects
+                </a>
+
+            </div>
+
+            <div class="hero-placeholder" aria-label="Developer portrait">
+                <span aria-hidden="true">👨‍💻</span>
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section
+            class="section container"
+            id="skills"
+            aria-labelledby="skills-title"
+        >
+
+            <div class="section-heading">
+                <p class="eyebrow">TECHNICAL SKILLS</p>
+
+                <h2 id="skills-title">
+                    Skills Matrix
+                </h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <h3>Frontend</h3>
+
+                    <ul class="badge-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Backend</h3>
+
+                    <ul class="badge-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>REST API</li>
+                        <li>MySQL</li>
+                    </ul>
+                </article>
+
+                <article class="skill-card">
+                    <h3>AI / Data</h3>
+
+                    <ul class="badge-list">
+                        <li>Machine Learning</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Time Series</li>
+                    </ul>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section
+            class="section container"
+            id="projects"
+            aria-labelledby="projects-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">SELECTED WORK</p>
+
+                <h2 id="projects-title">
+                    Projects
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <article
+                    class="project-card"
+                    data-category="frontend"
+                >
+
+                    <header class="card-header">
+
+                        <div>
+                            <h3>
+                                Enterprise Developer Portfolio
+                            </h3>
+
+                            <span class="badge">
+                                Frontend
+                            </span>
+                        </div>
+
+                    </header>
+
+                    <p>
+                        Responsive portfolio built with semantic HTML,
+                        CSS Grid and accessible JavaScript interactions.
+                    </p>
+
+                    <footer class="card-footer">
+
+                        <a
+                            href="#"
+                            aria-label="View Enterprise Developer Portfolio source code"
+                        >
+                            Source Code
+                        </a>
+
+                    </footer>
+
+                </article>
+
+
+                <article
+                    class="project-card"
+                    data-category="ai"
+                >
+
+                    <header class="card-header">
+
+                        <div>
+                            <h3>
+                                Aircraft RUL Prediction
+                            </h3>
+
+                            <span class="badge">
+                                AI / ML
+                            </span>
+                        </div>
+
+                    </header>
+
+                    <p>
+                        Machine learning system for predicting
+                        Remaining Useful Life of aircraft engines.
+                    </p>
+
+                    <footer class="card-footer">
+
+                        <a
+                            href="#"
+                            aria-label="View Aircraft RUL Prediction source code"
+                        >
+                            Source Code
+                        </a>
+
+                    </footer>
+
+                </article>
+
+
+                <article
+                    class="project-card"
+                    data-category="backend"
+                >
+
+                    <header class="card-header">
+
+                        <div>
+                            <h3>
+                                Smart Nutrition Advisor
+                            </h3>
+
+                            <span class="badge">
+                                Full Stack
+                            </span>
+                        </div>
+
+                    </header>
+
+                    <p>
+                        AI-powered web application for personalized
+                        nutrition recommendations.
+                    </p>
+
+                    <footer class="card-footer">
+
+                        <a
+                            href="#"
+                            aria-label="View Smart Nutrition Advisor source code"
+                        >
+                            Source Code
+                        </a>
+
+                    </footer>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section
+            class="section container"
+            id="contact"
+            aria-labelledby="contact-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2 id="contact-title">
+                    Contact Me
+                </h2>
+
+            </div>
+
+
+            <form
+                class="contact-form"
+                id="contact-form"
+            >
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    class="button"
+                    type="submit"
+                >
+                    Send Message
+                </button>
+
             </form>
+
         </section>
 
-        <section id="rul-dashboard" aria-labelledby="rul-title">
-            <h2 id="rul-title">RUL Prediction Dashboard</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Asset</th>
-                        <th>Part</th>
-                        <th>RUL</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>CFM56-7B</td>
-                        <td>High-Pressure Turbine Blade</td>
-                        <td>180 days</td>
-                        <td>Watch</td>
-                    </tr>
-                    <tr>
-                        <td>LEAP-1A</td>
-                        <td>Fuel Nozzle</td>
-                        <td>92 days</td>
-                        <td>Critical</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="recommendations" aria-labelledby="recommendations-title">
-            <h2 id="recommendations-title">AI Replacement Recommendations</h2>
-            <article>
-                <h3>Recommended action: Replace fuel nozzle assembly</h3>
-                <p>Predicted RUL is below threshold. Recommend replacement within 30 days to minimize downtime risk.</p>
-            </article>
-            <article>
-                <h3>Supplier match: AeroSupply International</h3>
-                <p>Certified OEM-compatible part available with same-day dispatch for MRO hubs in Singapore and Dubai.</p>
-            </article>
-        </section>
-
-        <section id="marketplace" aria-labelledby="marketplace-title">
-            <h2 id="marketplace-title">Marketplace</h2>
-            <ul>
-                <li>
-                    <article>
-                        <h3>Engine Fan Blade</h3>
-                        <p>Next-gen alloy fan blade for twin-aisle aircraft fleets.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Auxiliary Power Unit Kit</h3>
-                        <p>Refurbished APU kit with maintenance history and QA verification.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Hydraulic Pump Module</h3>
-                        <p>High-cycle hydraulic module for heavy-duty maintenance windows.</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
     </main>
 
-    <aside role="complementary" aria-labelledby="alerts-title">
-        <h2 id="alerts-title">RUL Alerts</h2>
-        <ul>
-            <li>Fuel nozzle on LEAP-1A requires replacement in 92 days.</li>
-            <li>Hydraulic pump on A320neo shows accelerated wear pattern.</li>
-        </ul>
-    </aside>
 
-    <footer role="contentinfo">
-        <p>AeroPartsAI Marketplace © 2026</p>
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Nguyen Bao Chinh.
+                Enterprise Developer Portfolio.
+            </p>
+
+        </div>
+
     </footer>
+    
+<script src="script.js"></script>
+
 </body>
+
 </html>
